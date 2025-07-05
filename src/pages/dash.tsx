@@ -24,10 +24,10 @@ const Dash: React.FC = () => {
         <Navbar userName="Youssab" />
 
         <Box sx={{ mt: 0, px: 3 }}>
-          {/* Full-width ExamCard */}
+       
           <ExamCard />
 
-          {/* Grid layout for AnniCard and WhatsDueCard */}
+         
           <Box
   sx={{
     display: 'grid',
@@ -37,7 +37,7 @@ const Dash: React.FC = () => {
     },
     gap: 2,
     mt: 3,
-    alignItems: 'stretch', // <-- key line to equalize height
+    alignItems: 'stretch', 
   }}
 >
   <Box sx={{ height: '100%' }}>
