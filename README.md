@@ -1,46 +1,85 @@
-# Getting Started with Create React App
+# 🚀 Getting Started with Anyware Frontend
 
-This project was  Material UI with [Create React App](https://github.com/facebook/create-react-app).
+This project is built using **Create React App**, styled with **Material UI**, and supports multilingual translation using **i18next**.
 
-## Available Scripts
+## 🧩 Tech Stack
+
+- ⚛️ React (CRA)
+- 🎨 Material UI (MUI v5)
+- 🌍 i18next (for translation)
+- 🔄 Redux Toolkit (state management)
+- 🔗 Axios (API calls to backend)
+- 🧪 Testing support via Jest (CRA default)
+
+---
+
+## 📦 Features
+
+- 📝 Fetch announcements and quizzes from a backend server.
+- 🌐 i18n integration to support multiple languages.
+- 🧠 Modern UI with Material UI components.
+- 🔐 Simple login page using Redux auth flow.
+- 🖥 Runs on port **3000** with `npm start`.
+
+---
+
+## 📁 Available Scripts
 
 In the project directory, you can run:
 
 ### `npm start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
-
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+Runs the app in development mode on [http://localhost:3000](http://localhost:3000).
 
 ### `npm test`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Runs the test runner in interactive watch mode.
 
 ### `npm run build`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Builds the app for production to the `build` folder.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+---
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## 🔑 Authentication
 
-### `npm run eject`
+The project includes a basic login page. After clicking the login button, the user is redirected to the dashboard (authentication is handled via Redux logic only – no real auth service).
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+---
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## 🌍 Internationalization (i18n)
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+The project uses `react-i18next` for language translation. You can easily switch between supported languages using configuration in `i18n.js`.
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+---
 
-## Learn More
+## 🧪 Backend Integration
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Data for:
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+- **Announcements**
+- **Quizzes**
+
+...is fetched from a Node.js backend via REST APIs using Axios. You’ll find the logic inside the `redux/action/` folder.
+
+---
+
+## 🛠 Custom Components
+
+- `WhatsDueCard`: Shows upcoming quizzes and assignments.
+- `DueItem`: Reusable card for each quiz/assignment.
+- `LoginPage`: Basic login screen using Material UI.
+
+---
+
+## 🧠 How to Run
+
+1. Clone the repo:
+   ```bash
+ -  git clone https://github.com/your-username/anyware-frontend.git](https://github.com/youssabayman1/anywareFront.git
+  - cd anyware-frontend
+- Install dependencies:npm install
+   
+-Start the app:npm run start
+
+
